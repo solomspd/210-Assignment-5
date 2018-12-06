@@ -21,7 +21,7 @@ private:
 	void min_val(node **&);
 
 	void print_preorder(node *);
-	void file_preorder( std::ofstream&, node *);
+	void file_preorder(std::ofstream&, node *);
 
 	void file_inorder(std::ofstream&, node *);
 	void print_inorder_pri(node *);
@@ -49,4 +49,3 @@ public:
 	int get_size();
 	~binary_tree();
 };
-

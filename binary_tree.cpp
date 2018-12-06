@@ -38,7 +38,7 @@ void binary_tree<key_type, data_type>::insert(std::string key_in) {
 }
 
 template<class key_type, class data_type>
-void binary_tree<key_type, data_type>::insert_priv(node *& cursor, std::string key_in, data_type data_in, int at ) {
+void binary_tree<key_type, data_type>::insert_priv(node *& cursor, std::string key_in, data_type data_in, int at) {
 	if (at < key_in.length()) {
 		if (cursor->key == key_in[at]) {
 			cursor = cursor->left;
@@ -192,23 +192,23 @@ data_type binary_tree<key_type, data_type>::search_priv(node *& cursor, std::str
 	else {
 		return cursor->data;
 	}
-	
+
 
 
 	/*if (at < key_in.length()) {
-		if (cursor->key == key_in[at]) {
-			return cursor->key + search(cursor->left, key_in, ++at);
-		}
-		else if (cursor->key > key_in[at]) {
-			std::cout << "entry not found" << std::endl;
-		}
-		else if (cursor == NULL) {
-			std::cout << "entry not found" << std::endl;
-		}
-		else if (cursor->key < key_in[at]) {
-			cursor = cursor->right;
-		}
-		insert(cursor, key_in, data_in, ++at);
+	if (cursor->key == key_in[at]) {
+	return cursor->key + search(cursor->left, key_in, ++at);
+	}
+	else if (cursor->key > key_in[at]) {
+	std::cout << "entry not found" << std::endl;
+	}
+	else if (cursor == NULL) {
+	std::cout << "entry not found" << std::endl;
+	}
+	else if (cursor->key < key_in[at]) {
+	cursor = cursor->right;
+	}
+	insert(cursor, key_in, data_in, ++at);
 	}*/
 }
 

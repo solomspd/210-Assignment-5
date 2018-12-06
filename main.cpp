@@ -5,10 +5,10 @@
 #include "binary_tree.h"
 #include "binary_tree.cpp"
 
-void add_dictionary(binary_tree<std::string, int> [26], binary_tree<std::string, int> [10]);
+void add_dictionary(binary_tree<char, int> [26], binary_tree<char, int> [10]);
 
 void main() {
-	binary_tree<std::string, int> dictionary[26], dictionary_int[10];
+	binary_tree<char, int> dictionary[26], dictionary_int[10];
 	bool is_cummulative = false, exit = false;
 	std::string temp;
 	while (!exit) {
@@ -75,7 +75,7 @@ void main() {
 }
 
 //function to add a file to dictionary
-void add_dictionary(binary_tree<std::string, int> dictionary[26], binary_tree<std::string, int> dictionary_int[10]) {
+void add_dictionary(binary_tree<char, int> dictionary[26], binary_tree<char, int> dictionary_int[10]) {
 	std::ifstream in_file;
 	std::string file_name;
 	std::cout << std::endl <<  "please enter file name to add to dictionary: ";
